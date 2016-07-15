@@ -4,6 +4,9 @@ import Kittens from '../components/Kittens';
 import { connect } from 'react-redux';
 import { requestKittens } from '../actions/kittens';
 
+import Users from '../components/Users';
+import { requestUsers } from '../actions/users';
+
 export default class Index extends Component {
   componentDidMount() {
     this.props.requestKittens();

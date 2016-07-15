@@ -1,1 +1,5 @@
-This is a work in progress.
+Users API outline
+
+HTTP Method	URI                       Action
+GET	        http://[hostname]/users   retrieves list of users
+POST		http://[hostname]/users   creates a new user

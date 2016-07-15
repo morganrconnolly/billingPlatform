@@ -4,7 +4,7 @@ from models import User
 
 users_api = Api(Blueprint('users_api', __name__))
 
-@kittens_api.resource('/users')
+@users_api.resource('/users')
 class UsersAPI(Resource):
     @staticmethod
     def get():

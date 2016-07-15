@@ -5,8 +5,11 @@ from models import Kitten
 
 kittens_api = Api(Blueprint('kittens_api', __name__)) # pylint: disable=invalid-name
 
+
 @kittens_api.resource('/kittens')
 class KittensAPI(Resource):
+
+    #why are these static methods? What are the consequences of this?
     @staticmethod
     def get():
         kittens = Kitten.query
