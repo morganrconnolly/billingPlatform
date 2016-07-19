@@ -42,6 +42,6 @@ def create_test_app():
 
     db.init_app(app)
 
-    handler = StreamHandler(stdout)
-    app.logger.addHandler(handler)
-    return app
+    with app.app_context():
+        db.create_all
+    return app, db
