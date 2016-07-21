@@ -1,0 +1,3 @@
+HTTP Method	Action		URI
+
+POST 		add a new user  http://[hostname]/api2/tasks/username==
