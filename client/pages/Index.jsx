@@ -7,17 +7,16 @@ import { requestKittens } from '../actions/kittens';
 import Users from '../components/Users';
 import { requestUsers } from '../actions/users';
 
+var MainContainer = require('../components/MainContainer')
+
 export default class Index extends Component {
-  componentDidMount() {
-    this.props.requestKittens();
-  }
 
   render() {
-    const { sheet } = this.props;
+
 
     return (
-      <div className={sheet.classes.index}>
-        <Kittens />
+      <div>
+        <MainContainer />
       </div>
     );
   }
@@ -35,6 +34,7 @@ const STYLES = {
   }
 };
 
+//I have no idea what this is doing (beyond exporting this page) but it's working.
 export default connect(
   () => ({}),
   { requestKittens }

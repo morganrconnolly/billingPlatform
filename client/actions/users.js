@@ -6,9 +6,7 @@ export function addUser() {
   return async dispath => {
     dispath({
       type: actionTypes.ADD_USER
-    });
-  
-
+    });  
     try {
       const result = await post('/users');
 

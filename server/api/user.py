@@ -1,10 +1,9 @@
 from flask import Blueprint
 from flask_restful import Api, Resource, reqparse
 from models import User
-from app import create_app, db
+from app import db
 
-app = create_app()
-api = API(app)
+
 
 """
 get UserAPI when have user.id argument. So, we need a UsersAPI to
@@ -16,7 +15,7 @@ class UsersAPI(Resource):
 		self.reqparse = reqparse.RequestParser()
 		self.reqparse.add_argument('username', type = str, required = True,
 			help = 'No username provided', location = 'json')
-		super(TaskListAPI, self).__init__()
+		super(UsersAPI, self).__init__()
 
 	def post(self):
 		args = self.reqparse.parse_args()
@@ -31,20 +30,19 @@ class UserAPI(Resource):
 		self.reqparse.add_argument('username', type = str, location = 'json')
 		self.reqparse.add_argument('email', type = str, location = 'json')
 		self.reqparse.add_argument('admin', type = bool, location = 'json')
-		super(TaskAPI, self).__init__()
+		super(UserAPI, self).__init__()
 
 
-    def get(self, id):
-        pass
+	def get(self, id):
+		pass
 
-    def put(self, id):
-        pass
+	def put(self, id):
+		pass
 
-    def delete(self, id):
-        pass
-
-
+	def delete(self, id):
+		pass
 
 
-api.add_resource(UsersAPI, '/users', endpoint = 'users')
-api.add_resource(UserAPI, '/users/<int:id>', endpoint = 'user')
+
+
+
