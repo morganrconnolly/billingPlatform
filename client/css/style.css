@@ -1,0 +1,357 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/*
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('http://breakoutmentors.com/wp-content/themes/solveto/font/BebasNeue.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}*/
+
+/* Sidebar Styles */
+.sidebar{
+    padding: 0;
+    height: 100%;
+}
+.sidebar-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 70px;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #2f383d;
+    font-size: 30px;
+    font-family: Bebas Neue;
+    padding-top: 5px;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #000;
+    background: rgba(0,0,0,0.2);
+}
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+.sidebar-nav li.active{
+    background: #0098d8;
+}
+.sidebar-nav li.active a {
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Bebas Neue;
+    color:#ed1c24
+}
+h2, h3, h4, h5, h6{
+    color: black;
+}
+.sidebar.toggled {
+    display: block;
+}
+
+/* Header Styles */
+#header {
+    background: #191919;
+}
+#header img{
+    width: 220px;
+    margin: 15px;
+}
+#menu-toggle-button {
+    background: url('http://breakoutmentors.com/wp-content/themes/solveto/img/res_m_open.png') no-repeat;
+    width: 45px;
+    height: 45px;
+    margin-top: 22px;
+    float: right;
+}
+.navbar{
+    margin-bottom: 0px;
+}
+
+/*column height hack */
+body{
+    background: #EDEDED;    
+}
+.main-content {
+    background: white;
+    position: relative;
+    margin-bottom: -100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+.bottom-space{
+    padding: 30px;
+}
+
+/* Date confirmation component */
+.long-date {
+    font-size: 18px;
+}
+.confirmed-session-icon {
+    color: #5cb85c;
+    margin-left: -4px;
+ }
+.btn-link{
+    color: black;
+}
+.btn-link:hover{
+    color: black;
+}
+.button-section{
+    padding: 0px;
+}
+.button-section .yes-button,
+.button-section .no-button {
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+}
+.button-section button:last-child {
+    margin-right: 0;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+} 
+.details-box{
+    height: 22px;
+}
+.details-box div{
+    display: none;   
+}
+.details-box div.toggled{
+    display: inline-block;   
+}
+.details-text{
+    font-style: italic;
+}
+.button-section button{
+    margin: 0 10px 0 0;
+}
+.areyousure {
+    padding-right: 5px;
+}
+.center-show-more{
+    margin: 0 auto;
+    width: 95px;
+}
+.confirm, .confirmed, .paid {
+    width: 86px;
+}
+.session-canceled, .session-moved{
+    width: 57px;
+}
+.confirmed, .paid{
+    background-color: #eee;
+}
+
+/* mentor details and hours section */
+.mentor-details p{
+    margin: 0;
+}
+.num-sessions {
+    font-size: 42px;
+    font-family: Bebas Neue;
+    line-height: 1;
+}
+.mentor-details h4{
+    margin: 0;
+}
+.hours-coding, .mentor-details, .session-credits-remaining{
+    margin-bottom: 15px;
+    padding-right: 0;
+    padding-left: 15px;
+}
+
+/* billing page specific */
+.long-date{
+    padding-left: 30px;
+}
+.btn-group {
+    padding-left: 0;
+    margin: 15px 0;
+}
+.btn-group label{
+    height: 90px;
+}
+.btn-group label:first-child{
+    padding-top: 36px;
+}
+.additional-10 {
+    display: none;
+}
+.additional-10.toggled {
+    display: block;
+}
+.center-button-group{
+    margin: 0 auto;
+    width: 311px;
+}
+.center-pay-now{
+    margin: 25px auto;
+    width: 90px;
+}
+.center-contact-link{
+    margin: 0 auto;
+    width: 290px;
+}
+.billing-history-heading{
+    display: inline-block;
+}
+.billing-history-button {
+    float:right;
+    margin-top: 26px
+}
+.shopping-cart h3 {
+    padding-left: 15px;
+}
+.glyphicon-chevron-right, .glyphicon-chevron-left{
+    top:2px;
+}
+
+/*payment history page */
+.payment-history-details p{
+    margin: 0;
+}
+.covered-sessions p,
+.subtotal p{
+    padding-left: 15px;
+    font-size: 12px;
+}
+.payment-history-details > div {
+    padding-bottom: 10px;
+}
+
+
+/* administrator pages */
+.checkbox.show-inactive {
+    display: inline;
+    padding-left: 20px;
+}
+.group-details {
+    margin-top: 30px;
+}
+.group-details .session-date{
+    padding-left: 20px;
+}
+.session-action p{
+    font-style: italic;
+}
+.edit-button {
+    float:right;
+}
+
+
+
+/* Responsive Styles */
+
+   /* BIG */
+@media(min-width:768px) {
+
+    #menu-toggle-button {
+        display: none;
+    }
+    h4 {
+        font-size: 24px;
+    }
+
+}
+
+   /* MOBILE */
+@media(max-width:768px) {
+    #menu-toggle-button {
+        display: inline-block;
+    }
+    #header img{
+        width: 175px;
+        margin: 10px 10px;
+    }
+    .sidebar {
+        display: none;
+    }
+    .num-sessions {
+        font-size: 32px;
+    }
+    .btn-group label{
+        font-size: 16px;
+        height: 82px;
+    }
+    .btn-group label:first-child{
+        padding-top: 34px;
+    }
+    .center-button-group{
+        width: 284px;
+    }
+    .button-section button{
+        padding: 5px 5px;
+        margin: 0 5px 5px 0;
+    }
+}
+
+/* MOBILE SIZE JUST FOR ARE YOU SURE BUTTON BREAK */
+@media(max-width:515px) {
+    .areyousure {
+        display: block;
+    }
+}
+
+/* TINY MOBILE */
+@media(max-width:400px) {
+    .details-box {
+        font-size: 12px;
+    }
+    .btn-group label{
+        font-size: 12px;
+        height: 67px;
+    }
+    .btn-group label:first-child{
+        padding-top: 27px;
+    }
+    .center-button-group{
+        width: 230px;
+    }
+    #header img {
+        width: 170px;
+        margin: 8px 8px 8px 2px;
+    }
+    #menu-toggle-button {
+        margin-top: 20px;
+    }
+    .long-date {
+        font-size: 16px;
+    }
+    .long-date span {
+        display: block;
+    }
+    .button-section {
+        padding-left: 10px;
+    }
+    .button-section button{
+        padding: 2px 5px;
+    }
+    .button-section .yes-button, 
+    .button-section .no-button {
+        padding: 5px 10px;
+    }
+    .main-content{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .confirm, .confirmed, .paid, .modify, .session-canceled, .session-moved{
+        width: 100%;
+    }
+
+}
+
+
+/*3 buttons break point is 684 px */

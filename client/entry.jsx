@@ -32,5 +32,5 @@ ReactDOM.render(
   <Provider store={store}>
     <Index />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('entry-point')
 );

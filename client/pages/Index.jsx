@@ -9,7 +9,9 @@ import { requestUsers } from '../actions/users';
 
 var MainContainer = require('../components/MainContainer')
 
-export default class Index extends Component {
+
+//renamed to avoid conflicts with Index.js
+export default class Index2 extends Component {
 
   render() {
 

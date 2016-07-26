@@ -6,7 +6,7 @@ var React = require('react');
 function SidebarContainer(props) {
 	return (
 			<div>
-
+					<StudentList >
 			</div>
 		)
 }
